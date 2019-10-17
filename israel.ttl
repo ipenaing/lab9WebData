@@ -7,6 +7,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#>.
 @prefix social: <http://users.dcc.uchile.cl/~ahogan/social.ttl#> .
 @prefix bio: <http://purl.org/vocab/bio/0.1/> .
+@prefix whois: <http://www.kanzaki.com/ns/whois#> .
 
 <> a foaf:Document ;
    dc:date "2019-10-17"^^xsd:date ;
@@ -38,11 +39,14 @@
    foaf:schoolHomepage <http://ingenieria.uchile.cl/> ;
    # Definir propiedades de social.
    social:hasEnemy <http://raw.githubusercontent.com/JoseIVP/lab9-watos/master/jose.ttl#jv> ;
-   social:hasSpiritAnimal <http://www.wikidata.org/entity/Q19939> .
+   social:hasSpiritAnimal <http://www.wikidata.org/entity/Q19939> ;
    # 2 LOV Propiedades.
    bio:birth [a bio:Birth ;
-   					  bio:place <http://dbpedia.org/page/Ecuador> ;
+   						bio:principal <http://raw.githubusercontent.com/ipenaing/lab9WebData/master/israel.ttl#ip> ;
+   					  bio:place <http://www.wikidata.org/entity/Q2887> ;
    					  bio:date "1993-05-04" ]  ;
+   whois:stage [whois:place "Santiago, Chile" ; 
+   							whois:since 1982] ;
    
    
    foaf:myersBriggs "INTP" .
