@@ -46,7 +46,4 @@
    					  bio:place <http://www.wikidata.org/entity/Q2887> ;
    					  bio:date "1993-05-04" ]  ;
    whois:stage [whois:place "Santiago, Chile" ; 
-   							whois:since 1982] ;
-   
-   
-   foaf:myersBriggs "INTP" .
+   							whois:since 1982] .
